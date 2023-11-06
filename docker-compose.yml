@@ -3,7 +3,7 @@ services:
   openas2:
     image: 817004964868.dkr.ecr.eu-west-2.amazonaws.com/openas2:amd64
     volumes:
-      - ./openas2/Server/src/config:/opt/openas2/config
+      - ./Server/src/config:/opt/openas2/config
       - data_volume:/opt/openas2/data
     ports:
       - 4080:10080
