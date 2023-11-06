@@ -4,18 +4,20 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    volumes:
+      - ./openas2/Server/src/config:/opt/openas2/config
+      - data_volume:/opt/openas2/data
     ports:
       - 4080:10080
       - 4081:10081
       - 8443:8443
     tty: true
     stdin_open: true
+    restart: always
+    # Change these for customers
+    environment:
+      - PARTNER_NAME: new-parker
+      - PARTNER_AS2_ID: new-parker
 
-  openas2_webui:
-    build:
-      context: .
-      dockerfile: Dockerfile_WebUI
-    ports:
-      - 8080:80
-    tty: true
-    stdin_open: true
+volumes:
+  data_volume:
