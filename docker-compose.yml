@@ -13,9 +13,7 @@ services:
     stdin_open: true
     restart: always
     # Change these for customers
-    environment:
-      PARTNER_NAME: new-parker
-      PARTNER_AS2_ID: new-parker
-
+    env_file:
+      - .env
 volumes:
   data_volume:
