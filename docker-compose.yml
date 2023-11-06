@@ -12,7 +12,6 @@ services:
     tty: true
     stdin_open: true
     restart: always
-    # Change these for customers
     env_file:
       - .env
 volumes:
