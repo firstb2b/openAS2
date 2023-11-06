@@ -1,7 +1,7 @@
 <partnerships>
     <partner name="celosia"
              as2_id="celosia"
-             x509_alias="fb2b2048"
+             x509_alias="firstb2b"
              email="tobias@firstb2b.com"/>
 
     <partner name="new-parker"
