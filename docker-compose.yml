@@ -16,8 +16,8 @@ services:
     restart: always
     # Change these for customers
     environment:
-      - PARTNER_NAME: new-parker
-      - PARTNER_AS2_ID: new-parker
+      PARTNER_NAME: new-parker
+      PARTNER_AS2_ID: new-parker
 
 volumes:
   data_volume:
