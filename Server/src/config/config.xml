@@ -46,7 +46,7 @@
                async_mdn_receiver_port="$properties.module.AS2MDNReceiverModule.http.port$"
                as2_async_mdn_url="http://localhost:$properties.async_mdn_receiver_port$"
                as2_keystore="%home%/certs.p12"
-               as2_keystore_password="test"
+               as2_keystore_password="$ENV{AS2_KEYSTORE_PWD}"
                ssl_keystore="%home%/ssl_certs.jks"
                ssl_keystore_password="testas2"
                partnership_file="%home%/partnerships.xml"
