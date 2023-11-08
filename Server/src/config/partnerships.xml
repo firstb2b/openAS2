@@ -9,7 +9,7 @@
              x509_alias="acme"
              email="tobias@firstb2b.com"/>
 
-    <partnership name="$ENV{PARTNER_NAME}-to-celosia">
+    <partnership name="$ENV{SENDING_PARTNERSHIP_NAME}">
         <sender name="$ENV{PARTNER_NAME}"/>
         <receiver name="celosia"/>
         <pollerConfig enabled="true"/>
@@ -27,7 +27,7 @@
         <attribute name="rename_digest_to_old_name" value="false"/>
         <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
     </partnership>
-    <partnership name="celosia-to-$ENV{PARTNER_NAME}">
+    <partnership name="$ENV{RECEIVING_PARTNERSHIP_NAME}">
         <sender name="celosia"/>
         <receiver name="$ENV{PARTNER_NAME}"/>
         <attribute name="store_received_file_to" value="$properties.storageBaseDir$/inbox/$msg.receiver.as2_id$/inbox/$msg.sender.as2_id$-$rand.12345$-$msg.content-disposition.filename$"/>
