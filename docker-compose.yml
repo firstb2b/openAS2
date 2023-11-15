@@ -12,7 +12,10 @@ services:
     tty: true
     stdin_open: true
     restart: always
-    env_file:
-      - .env
+    environment:
+      - PARTNER_NAME=new-parker
+      - PARTNER_AS2_ID=new-parker
+      - SENDING_PARTNERSHIP_NAME=new-parker-to-Celosia
+      - RECEIVING_PARTNERSHIP_NAME=Celosia-to-new-parker=value
 volumes:
   data_volume:
