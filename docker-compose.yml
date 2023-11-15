@@ -17,5 +17,6 @@ services:
       - PARTNER_AS2_ID=new-parker
       - SENDING_PARTNERSHIP_NAME=new-parker-to-Celosia
       - RECEIVING_PARTNERSHIP_NAME=Celosia-to-new-parker=value
+      - AS2_KEYSTORE_PWD=test
 volumes:
   data_volume:
