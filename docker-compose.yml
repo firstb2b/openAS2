@@ -1,7 +1,7 @@
 version: '3'
 services:
   openas2:
-    image: 817004964868.dkr.ecr.eu-west-2.amazonaws.com/openas2:amd64
+    build: .
     volumes:
       - ./Server/src/config:/opt/openas2/config
       - data_volume:/opt/openas2/data
@@ -12,11 +12,7 @@ services:
     tty: true
     stdin_open: true
     restart: always
-    environment:
-      - PARTNER_NAME=new-parker
-      - PARTNER_AS2_ID=new-parker
-      - SENDING_PARTNERSHIP_NAME=new-parker-to-Celosia
-      - RECEIVING_PARTNERSHIP_NAME=Celosia-to-new-parker=value
-      - AS2_KEYSTORE_PWD=test
+    env_file:
+      - .env
 volumes:
   data_volume:
