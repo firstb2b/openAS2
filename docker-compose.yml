@@ -1,7 +1,7 @@
 version: '3'
 services:
   openas2:
-    image: public.ecr.aws/j6w3y6o7/firstb2b-openas2:latest
+    build: .
     volumes:
       - ./Server/src/config:/opt/openas2/config
       - data_volume:/opt/openas2/data
