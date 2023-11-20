@@ -4,7 +4,8 @@ services:
     image: public.ecr.aws/j6w3y6o7/firstb2b-openas2:latest
     volumes:
       - ./Server/src/config:/opt/openas2/config
-      - data_volume:/opt/openas2/data
+      - ./data:/opt/openas2/data
+      - ./logs:/opt/openas2/logs
     ports:
       - 4080:10080
       - 4081:10081
@@ -14,5 +15,3 @@ services:
     restart: always
     env_file:
       - .env
-volumes:
-  data_volume:
