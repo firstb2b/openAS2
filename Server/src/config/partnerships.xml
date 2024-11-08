@@ -6,7 +6,7 @@
 
     <partner name="${PARTNER_NAME}"
              as2_id="${PARTNER_AS2_ID}"
-             x509_alias="acme"
+             x509_alias="newacme"
              email="support@firstb2b.com"/>
 
     <partnership name="${SENDING_PARTNERSHIP_NAME}">
