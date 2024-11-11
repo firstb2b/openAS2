@@ -2,7 +2,6 @@
     <partner name="devtest"
              as2_id="devtest"
              x509_alias="firstb2b"
-             x509_alias_fallback="firstb2b20261107"
              email="support@firstb2b.com"/>
 
     <partner name="${PARTNER_NAME}"
