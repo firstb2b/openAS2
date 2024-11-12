@@ -1,7 +1,8 @@
 <partnerships>
-    <partner name="devtest"
-             as2_id="devtest"
+    <partner name="celosia"
+             as2_id="celosia"
              x509_alias="firstb2b20261107"
+             x509_alias_fallback="firstb2b"
              email="support@firstb2b.com"/>
 
     <partner name="${PARTNER_NAME}"
@@ -11,7 +12,7 @@
 
     <partnership name="${SENDING_PARTNERSHIP_NAME}">
         <sender name="${PARTNER_NAME}"/>
-        <receiver name="devtest"/>
+        <receiver name="celosia"/>
         <pollerConfig enabled="true"/>
         <attribute name="protocol" value="as2"/>
         <attribute name="content_transfer_encoding" value="8bit"/>
@@ -28,7 +29,7 @@
         <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
     </partnership>
     <partnership name="${RECEIVING_PARTNERSHIP_NAME}">
-        <sender name="devtest"/>
+        <sender name="celosia"/>
         <receiver name="${PARTNER_NAME}"/>
         <attribute name="store_received_file_to" value="$properties.storageBaseDir$/inbox/$msg.receiver.as2_id$/inbox/$msg.sender.as2_id$-$rand.12345$-$msg.content-disposition.filename$"/>
         <attribute name="reject_unsigned_messages" value="true"/>

@@ -10,9 +10,9 @@ timestamp=$(date "+%Y%m%d%H%M%S")
 quote="\"Help me, Obi-Wan Kenobi. You're my only hope.\" - Princess Leia"
 
 # Define the file path
-file_path="./data/outbox/devtest/test_message_${timestamp}.txt"
+file_path="./data/outbox/celosia/test_message_${timestamp}.txt"
 
 echo "Creating test file at $file_path..."
 
 # Command to write the quote into the file
-echo '$quote' > $file_path
+echo "$quote" > $file_path
