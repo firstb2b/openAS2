@@ -4,9 +4,6 @@
 # Usage: ./scripts/reload-as2-container.sh
 # Note: This is not required for partnership.xml changes
 
+git fetch origin/main
 git reset --hard origin/main
-git pull
-
-docker compose down
-docker compose pull openas2
 docker compose up -d --build openas2
