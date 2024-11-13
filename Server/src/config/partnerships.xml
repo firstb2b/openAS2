@@ -1,7 +1,8 @@
 <partnerships>
     <partner name="celosia"
              as2_id="celosia"
-             x509_alias="firstb2b"
+             x509_alias="firstb2b20261107"
+             x509_alias_fallback="firstb2b"
              email="support@firstb2b.com"/>
 
     <partner name="${PARTNER_NAME}"

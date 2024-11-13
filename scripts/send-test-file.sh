@@ -15,4 +15,4 @@ file_path="./data/outbox/celosia/test_message_${timestamp}.txt"
 echo "Creating test file at $file_path..."
 
 # Command to write the quote into the file
-echo '$quote' > $file_path
+echo "$quote" > $file_path
